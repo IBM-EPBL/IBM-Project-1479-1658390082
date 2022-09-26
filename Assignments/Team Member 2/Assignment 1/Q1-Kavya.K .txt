@@ -1,0 +1,58 @@
+<!--1. Create form of type input,text,email,password,radio button,textarea,drop down and navigate to success page
+ and display files of form in table. -->
+ 
+<html>
+<head> 
+ <title>Form</title>
+ <script type="text/javascript">
+ function displayDetails()
+ {
+ var name = document.getElementById("name").value;
+ var email = document.getElementById("email").value;
+ var gender = document.getElementById("gender").value;
+ var year = document.getElementById("year").value;
+ var pl = document.getElementById("pl").value;
+ document.writeln("<html><body>");
+ document.writeln("<table border='1'><tr>");
+ document.writeln("<th>Name</th><th>Email</th><th>Gender</th><th>ProgrammingLanguage</th><th>Year</th>");
+ document.writeln("</tr>");
+ document.writeln("<tr><td>"+name+"</td><td>"+email+"</td><td>"+gender+"</td><td>"+pl+"</td><td>"+year+"</td>");
+ document.writeln("</tr></table>");
+ document.writeln("</body></html>");
+ }
+ </script>
+ </head>
+ <body>
+ <form method="post" onsubmit="displayDetails()">
+  <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter name"/><br/><br/>
+  <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email"/><br/><br/>
+  <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" placeholder="Enter password"/><br/><br/> 
+  <label for="address">Address:</label>
+     <textarea id="address" name="address" rows="4" cols="50"></textarea><br/><br/>
+  <label for="gender">Gender: </label>
+     <input type="radio" id="gender" name="gender" value="male">Male</input>	
+     <input type="radio" id="gender" name="gender" value="female">Female</input><br/><br/>
+  <label for="pl">Programming languages: </label>
+     <input type="checkbox" id="pl" name="pl" value="java">Java</input>
+	 <input type="checkbox" id="pl" name="pl" value="c">C</input>
+	 <input type="checkbox" id="pl" name="pl" value="python">Python</input>
+	 <input type="checkbox" id="pl" name="pl" value="c++">C++</input><br/><br/>
+  <label for="year">Year:</label>
+     <select name="year" id="year">
+	   <option value="first">I</option>
+	   <option value="first">II</option>
+	   <option value="first">III</option>
+	   <option value="first">IV</option>
+  	 </select><br/><br/>
+   <label for="submit">Submit:</label>
+     <input type="submit" value="submit"/><br/><br/>
+</form>
+</body>
+</html>	 
+       
+  	 
+  
+  

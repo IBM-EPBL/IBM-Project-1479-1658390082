@@ -1,0 +1,7 @@
+body {
+  background-color:lightpink;
+  border-style: solid;
+}
+table, th, td {
+  border:1px solid;
+}

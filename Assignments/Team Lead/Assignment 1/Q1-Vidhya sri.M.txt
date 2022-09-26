@@ -1,0 +1,70 @@
+<!--1. Create form of type input,text,email,password,radio button,textarea,drop down and navigate to success page
+ and display files of form in table. -->
+ 
+<html>
+
+<head> 
+ <title>Registration Form</title>
+ <script type="text/javascript">
+  function display()
+    {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var gender = document.getElementById("gender").value;
+    var year = document.getElementById("year").value;
+    var co = document.getElementById("co").value;
+    var batch = document.getElementById("batch").value;
+    document.writeln("<html><body>");
+    document.writeln("<table border='1'><tr>");
+    document.writeln("<th>Name</th><th>Email</th><th>Gender</th><th>Courses Offered</th><th>Batch</th><th>Year</th>");
+    document.writeln("</tr>");
+    document.writeln("<tr><td>"+name+"</td><td>"+email+"</td><td>"+gender+"</td><td>"+co+"</td><td>"+batch+"</td><td>"+year+"</td>");
+    document.writeln("</tr></table>");
+    document.writeln("</body></html>");
+    }
+ </script>
+ </head>
+
+ <body>
+ <center><br/>
+ <h1><b>Registration Form</b></h1><br/>
+ <form method="post" onsubmit="display()">
+  <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter name"/><br/><br/>
+  <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email"/><br/><br/>
+  <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" placeholder="Enter password"/><br/><br/> 
+  <label for="address">Address:</label>
+     <textarea id="address" name="address" rows="4" cols="50"></textarea><br/><br/>
+  <label for="gender">Gender: </label>
+     <input type="radio" id="gender" name="gender" value="male">Male</input>	
+     <input type="radio" id="gender" name="gender" value="female">Female</input><br/><br/>
+  <label for="pl">Courses Offered: </label><br/>
+     <input type="checkbox" id="co" name="co" value="matlab">Matlab</input><br/>
+	 <input type="checkbox" id="co" name="co" value="nodejs">NodeJS</input><br/>
+	 <input type="checkbox" id="co" name="co" value="python">Python</input><br/>
+	 <input type="checkbox" id="co" name="co" value="ui/ux">UI/UX</input><br/><br/>
+  <label for="year">Year:</label>
+     <select name="year" id="year">
+	   <option value="first">I</option>
+	   <option value="second">II</option>
+	   <option value="third">III</option>
+	   <option value="fourth">IV</option>
+  	 </select><br/><br/>
+   <label for="batch">Preferred Batch:</label>
+      <select name="batch" id="batch">
+	   <option value="sep">September</option>
+	   <option value="oct">October</option>
+	   <option value="nov">November</option>
+  	 </select><br/><br/>
+     <input type="submit" value="SUBMIT"/><br/><br/>
+</form>
+</center>
+</body>
+
+</html>	 
+       
+  	 
+  
+  
