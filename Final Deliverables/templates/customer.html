@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users Page</title>
+     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">	
+    <link rel="stylesheet" href="{{url_for('static',filename='myfont/css/all.min.css')}}">
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+<style>
+.button{
+		background-color:#0161FF;
+		color:white;
+		padding:20px 10px;
+		text-align:center;
+		font-size:15px;
+		cursor:pointer;
+		border-radius:50%;
+		}
+.button1{
+background-color:#0161FF;
+color:white;
+padding:20px 10px;
+text-align:center;
+font-size:15px;
+cursor:pointer;
+border-radius:50%;
+}
+.apply{
+color:blue;
+</style>
+</head>
+<body style="margin:0;
+	background-image:url('/static/velocix.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;">
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:220px; top:300px; font-size:15px;	">Apply Here</a>
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:220px; top:500px; font-size:15px;	">Apply Here</a>
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:220px; top:700px; font-size:15px;	">Apply Here</a>
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:1100px; top:160px; font-size:15px;	">Apply Here</a>
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:1100px; top:410px; font-size:15px;	">Apply Here</a> 
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:1100px; top:580px; font-size:15px;	">Apply Here</a>
+<a href="{{url_for('apply')}}" class='apply' style="position:fixed; left:600px; top:570px; font-size:15px;	">Apply Here</a>
+ <div class="container">
+        <div class="col-md-offset-3 col-md-5">
+		<div class="job-portal">
+            <h2 class="page-header text-primary text-center">Job Seekers</h2>
+            <h3 class="text-success">Welcome : {{session["name"]}}</h3>
+			
+            <hr>
+  		   <a href="{{url_for('logout')}}" style="position:relative; left:30px;" ><button class="button">Logout</button></a>
+	</div>
+        </div>
+     </div>	
+	 
+</body>
+</html>
